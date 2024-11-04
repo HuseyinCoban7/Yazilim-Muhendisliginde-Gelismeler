@@ -6,9 +6,6 @@ app = Flask(__name__)
 def home():
     return "Welcome to the REST API!"
 
-if __name__ == '__main__':
-    app.run(port=46)
-
 #2 Sayıyı Toplayan Endpoint
 
 @app.route('/add/<int:num1>/<int:num2>', methods=['GET'])
@@ -26,3 +23,8 @@ def multiply_numbers():
     num2 = data['num2']
     result = num1 * num2
     return {'result': result}
+
+#Memleketin Plakasına Göre Port
+
+if __name__ == '__main__':
+    app.run(port=46)
