@@ -7,7 +7,7 @@ def home():
     return "Welcome to the REST API!"
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=46)
 
 #2 Sayıyı Toplayan Endpoint
 
